@@ -1,0 +1,106 @@
+/* ==== GOOGLE FONTS ==== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+
+/* ==== VARIABLES CSS ==== */
+:root {
+  /* ==== COLORS ==== */
+  --first-clr: #12192c;
+  --lightblue-clr: #dadce0;
+  --parple-clr: #8b5ceb;
+
+  /* ==== FONT AND TYPOGRAPHY ==== */
+  --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 3rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --tiny-font-size: 0.625rem;
+
+  /* ==== FONT WEIGHT ==== */
+  --font-medium: 500;
+
+  /* ==== MARGENES BOTTOM ==== */
+  --mb-0-25: 0.25rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2-5: 2.5rem;
+
+  /* ==== Z INDEX ==== */
+  --z-normal: 1;
+  --z-tooltip: 10;
+}
+/* ==== MEDIA ==== */
+@media (min-width: 968px) {
+  :root {
+    --biggest-font-size: 3.5rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+    --tiny-font-size: 0.75rem;
+  }
+}
+/* ===== BASE ===== */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  color: var(--first-clr);
+}
+h1 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* ==== START FIRST PROJECT ==== */
+.wrapper {
+  position: relative;
+  min-width: 90vw;
+  top: 158px;
+}
+.container {
+  margin: auto;
+  max-width: 800px;
+  width: 87%;
+  padding: 2.25rem 1.875rem 2rem 1.875rem;
+  border-radius: 8px;
+  box-shadow: 0 30px 50px rgba(30, 21, 49, 0.3);
+}
+textarea {
+  width: 100%;
+  border: none;
+  resize: none;
+  outline: none;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: var(--first-clr);
+}
+/* ==== COUNT BAR ==== */
+.count {
+  padding: 0.5rem;
+  color: #556cae;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.count p {
+  color: var(--lightblue-clr);
+}
+.count h5 {
+  color: var(--lightblue-clr);
+  font-size: 1.4rem;
+}
+#word__count,
+#charac__count {
+  margin-left: 15px;
+}
+.charc {
+  margin-left: 15px;
+}
